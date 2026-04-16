@@ -36,9 +36,9 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="cursor-pointer flex items-center" aria-label="Pergule Ana Sayfa">
           <img
-            src="/logo.svg"
+            src="/logo.png"
             alt="Pergule — Tente ve Pergola Sistemleri"
-            className="h-9 md:h-11 w-auto object-contain brightness-0 invert"
+            className="h-9 md:h-11 w-auto object-contain"
             width="200"
             height="44"
           />
