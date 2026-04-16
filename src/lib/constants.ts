@@ -27,4 +27,4 @@ export const EMAIL = 'atatente@hotmail.com';
 export const ADDRESS = 'Yeşillik Caddesi 5757 Sok. No 22/C, Karabağlar / İzmir';
 
 /** Site domain */
-export const SITE_URL = 'https://pergule.com';
+export const SITE_URL = 'https://www.pergule.com';

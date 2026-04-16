@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pergule.com/sitemap.xml
+Sitemap: https://www.pergule.com/sitemap.xml
