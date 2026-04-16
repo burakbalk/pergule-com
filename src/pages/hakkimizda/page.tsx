@@ -17,17 +17,17 @@ const team = [
   {
     name: 'Ahmet Yılmaz',
     role: 'Kurucu & Genel Müdür',
-    img: '/images/ekip/ahmet-yilmaz.jpg',
+    img: '/images/ekip/ahmet-yilmaz.webp',
   },
   {
     name: 'Mehmet Kaya',
     role: 'Teknik Direktör',
-    img: '/images/ekip/mehmet-kaya.jpg',
+    img: '/images/ekip/mehmet-kaya.webp',
   },
   {
     name: 'Fatma Demir',
     role: 'Proje Koordinatörü',
-    img: '/images/ekip/fatma-demir.jpg',
+    img: '/images/ekip/fatma-demir.webp',
   },
 ];
 

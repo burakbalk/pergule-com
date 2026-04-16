@@ -3,32 +3,32 @@ import Icon from '@/components/Icon';
 
 const refs = [
   {
-    img: '/images/referanslar/home-ref-01.jpg',
+    img: '/images/referanslar/home-ref-01.webp',
     title: 'Bioklimatik Pergola',
     location: 'Villa Projesi',
   },
   {
-    img: '/images/referanslar/home-ref-02.jpg',
+    img: '/images/referanslar/home-ref-02.webp',
     title: 'Kasetli Tente',
     location: 'Cafe & Restoran',
   },
   {
-    img: '/images/referanslar/home-ref-03.jpg',
+    img: '/images/referanslar/home-ref-03.webp',
     title: 'Zip Perde',
     location: 'Konut Projesi',
   },
   {
-    img: '/images/referanslar/home-ref-04.jpg',
+    img: '/images/referanslar/home-ref-04.webp',
     title: 'Şeffaf Branda',
     location: 'Ticari Alan',
   },
   {
-    img: '/images/referanslar/home-ref-05.jpg',
+    img: '/images/referanslar/home-ref-05.webp',
     title: 'Otomatik Pergola',
     location: 'Otel Projesi',
   },
   {
-    img: '/images/referanslar/home-ref-06.jpg',
+    img: '/images/referanslar/home-ref-06.webp',
     title: 'Körüklü Tente',
     location: 'Konut Projesi',
   },

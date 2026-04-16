@@ -9,18 +9,18 @@ import Icon from '@/components/Icon';
 const categories = ['Tümü', 'Tente', 'Pergola', 'Branda & Perde'];
 
 const projects = [
-  { title: 'Bioklimatik Pergola', location: 'Villa Projesi', cat: 'Pergola', img: '/images/referanslar/ref-01.jpg' },
-  { title: 'Kasetli Tente', location: 'Cafe & Restoran', cat: 'Tente', img: '/images/referanslar/ref-02.jpg' },
-  { title: 'Zip Perde', location: 'Konut Projesi', cat: 'Branda & Perde', img: '/images/referanslar/ref-03.jpg' },
-  { title: 'Şeffaf Branda', location: 'Ticari Alan', cat: 'Branda & Perde', img: '/images/referanslar/ref-04.jpg' },
-  { title: 'Otomatik Pergola', location: 'Otel Projesi', cat: 'Pergola', img: '/images/referanslar/ref-05.jpg' },
-  { title: 'Körüklü Tente', location: 'Konut Projesi', cat: 'Tente', img: '/images/referanslar/ref-06.jpg' },
-  { title: 'Rollingroof Pergola', location: 'Rezidans Projesi', cat: 'Pergola', img: '/images/referanslar/ref-07.jpg' },
-  { title: 'Mafsallı Tente', location: 'Cafe Projesi', cat: 'Tente', img: '/images/referanslar/ref-08.jpg' },
-  { title: 'Win Tente', location: 'Sahil Projesi', cat: 'Tente', img: '/images/referanslar/ref-09.jpg' },
-  { title: 'Şeffaf Stor Branda', location: 'Mağaza Projesi', cat: 'Branda & Perde', img: '/images/referanslar/ref-10.jpg' },
-  { title: 'T Model Tente', location: 'Villa Projesi', cat: 'Tente', img: '/images/referanslar/ref-11.jpg' },
-  { title: 'Bioklimatik Pergola', location: 'Otel Havuzu', cat: 'Pergola', img: '/images/referanslar/ref-12.jpg' },
+  { title: 'Bioklimatik Pergola', location: 'Villa Projesi', cat: 'Pergola', img: '/images/referanslar/ref-01.webp' },
+  { title: 'Kasetli Tente', location: 'Cafe & Restoran', cat: 'Tente', img: '/images/referanslar/ref-02.webp' },
+  { title: 'Zip Perde', location: 'Konut Projesi', cat: 'Branda & Perde', img: '/images/referanslar/ref-03.webp' },
+  { title: 'Şeffaf Branda', location: 'Ticari Alan', cat: 'Branda & Perde', img: '/images/referanslar/ref-04.webp' },
+  { title: 'Otomatik Pergola', location: 'Otel Projesi', cat: 'Pergola', img: '/images/referanslar/ref-05.webp' },
+  { title: 'Körüklü Tente', location: 'Konut Projesi', cat: 'Tente', img: '/images/referanslar/ref-06.webp' },
+  { title: 'Rollingroof Pergola', location: 'Rezidans Projesi', cat: 'Pergola', img: '/images/referanslar/ref-07.webp' },
+  { title: 'Mafsallı Tente', location: 'Cafe Projesi', cat: 'Tente', img: '/images/referanslar/ref-08.webp' },
+  { title: 'Win Tente', location: 'Sahil Projesi', cat: 'Tente', img: '/images/referanslar/ref-09.webp' },
+  { title: 'Şeffaf Stor Branda', location: 'Mağaza Projesi', cat: 'Branda & Perde', img: '/images/referanslar/ref-10.webp' },
+  { title: 'T Model Tente', location: 'Villa Projesi', cat: 'Tente', img: '/images/referanslar/ref-11.webp' },
+  { title: 'Bioklimatik Pergola', location: 'Otel Havuzu', cat: 'Pergola', img: '/images/referanslar/ref-12.webp' },
 ];
 
 export default function ReferencesPage() {

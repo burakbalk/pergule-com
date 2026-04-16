@@ -30,9 +30,9 @@ export const servicesDetail: ServiceDetail[] = [
       { icon: 'building-line', title: 'Ticari Binalar', desc: 'Ofis ve iş yeri girişlerinde şık ve işlevsel kullanım.' },
     ],
     gallery: [
-      { src: '/images/hizmetler/kasetli-tente-1.jpg', alt: 'Kasetli tente uygulama 1 — teras gölgeleme sistemi' },
-      { src: '/images/hizmetler/kasetli-tente-2.jpg', alt: 'Kasetli tente uygulama 2 — balkon tente sistemi' },
-      { src: '/images/hizmetler/kasetli-tente-3.jpg', alt: 'Kasetli tente uygulama 3 — cafe tente sistemi' },
+      { src: '/images/hizmetler/kasetli-tente-1.webp', alt: 'Kasetli tente uygulama 1 — teras gölgeleme sistemi' },
+      { src: '/images/hizmetler/kasetli-tente-2.webp', alt: 'Kasetli tente uygulama 2 — balkon tente sistemi' },
+      { src: '/images/hizmetler/kasetli-tente-3.webp', alt: 'Kasetli tente uygulama 3 — cafe tente sistemi' },
     ],
   },
   {
@@ -55,9 +55,9 @@ export const servicesDetail: ServiceDetail[] = [
       { icon: 'hotel-line', title: 'Otel & Tatil Köyleri', desc: 'Havuz başı ve dış mekan alanlarında konforlu gölge.' },
     ],
     gallery: [
-      { src: '/images/hizmetler/koruklu-tente-1.jpg', alt: 'Körüklü tente uygulama 1 — geniş teras gölgeleme' },
-      { src: '/images/hizmetler/koruklu-tente-2.jpg', alt: 'Körüklü tente uygulama 2 — bahçe gölgeleme sistemi' },
-      { src: '/images/hizmetler/koruklu-tente-3.jpg', alt: 'Körüklü tente uygulama 3 — ticari alan tente sistemi' },
+      { src: '/images/hizmetler/koruklu-tente-1.webp', alt: 'Körüklü tente uygulama 1 — geniş teras gölgeleme' },
+      { src: '/images/hizmetler/koruklu-tente-2.webp', alt: 'Körüklü tente uygulama 2 — bahçe gölgeleme sistemi' },
+      { src: '/images/hizmetler/koruklu-tente-3.webp', alt: 'Körüklü tente uygulama 3 — ticari alan tente sistemi' },
     ],
   },
   {
@@ -80,9 +80,9 @@ export const servicesDetail: ServiceDetail[] = [
       { icon: 'building-4-line', title: 'Apartman Balkonları', desc: 'Dar ve geniş balkonlara uyum sağlayan esnek sistem.' },
     ],
     gallery: [
-      { src: '/images/hizmetler/mafsalli-tente-1.jpg', alt: 'Mafsallı tente uygulama 1 — teras gölgeleme' },
-      { src: '/images/hizmetler/mafsalli-tente-2.jpg', alt: 'Mafsallı tente uygulama 2 — balkon tente sistemi' },
-      { src: '/images/hizmetler/mafsalli-tente-3.jpg', alt: 'Mafsallı tente uygulama 3 — restoran dış alan' },
+      { src: '/images/hizmetler/mafsalli-tente-1.webp', alt: 'Mafsallı tente uygulama 1 — teras gölgeleme' },
+      { src: '/images/hizmetler/mafsalli-tente-2.webp', alt: 'Mafsallı tente uygulama 2 — balkon tente sistemi' },
+      { src: '/images/hizmetler/mafsalli-tente-3.webp', alt: 'Mafsallı tente uygulama 3 — restoran dış alan' },
     ],
   },
   {
@@ -105,9 +105,9 @@ export const servicesDetail: ServiceDetail[] = [
       { icon: 'hotel-bed-line', title: 'Otel Terasları', desc: 'Farklı geometrilerdeki otel teras alanları için ideal.' },
     ],
     gallery: [
-      { src: '/images/hizmetler/t-model-tente-1.jpg', alt: 'T Model tente uygulama 1 — köşe teras gölgeleme' },
-      { src: '/images/hizmetler/t-model-tente-2.jpg', alt: 'T Model tente uygulama 2 — L şekilli teras sistemi' },
-      { src: '/images/hizmetler/t-model-tente-3.jpg', alt: 'T Model tente uygulama 3 — ticari dış alan' },
+      { src: '/images/hizmetler/t-model-tente-1.webp', alt: 'T Model tente uygulama 1 — köşe teras gölgeleme' },
+      { src: '/images/hizmetler/t-model-tente-2.webp', alt: 'T Model tente uygulama 2 — L şekilli teras sistemi' },
+      { src: '/images/hizmetler/t-model-tente-3.webp', alt: 'T Model tente uygulama 3 — ticari dış alan' },
     ],
   },
   {
@@ -130,9 +130,9 @@ export const servicesDetail: ServiceDetail[] = [
       { icon: 'hotel-line', title: 'Otel & Tatil Tesisleri', desc: 'Açık alanlarda dört mevsim güvenli kullanım.' },
     ],
     gallery: [
-      { src: '/images/hizmetler/win-tente-1.jpg', alt: 'Win tente uygulama 1 — rüzgara dayanıklı tente sistemi' },
-      { src: '/images/hizmetler/win-tente-2.jpg', alt: 'Win tente uygulama 2 — sahil teras tente sistemi' },
-      { src: '/images/hizmetler/win-tente-3.jpg', alt: 'Win tente uygulama 3 — yüksek bina terası gölgeleme' },
+      { src: '/images/hizmetler/win-tente-1.webp', alt: 'Win tente uygulama 1 — rüzgara dayanıklı tente sistemi' },
+      { src: '/images/hizmetler/win-tente-2.webp', alt: 'Win tente uygulama 2 — sahil teras tente sistemi' },
+      { src: '/images/hizmetler/win-tente-3.webp', alt: 'Win tente uygulama 3 — yüksek bina terası gölgeleme' },
     ],
   },
   {
@@ -155,9 +155,9 @@ export const servicesDetail: ServiceDetail[] = [
       { icon: 'hotel-line', title: 'Otel & SPA Alanları', desc: 'Havuz başı ve teras alanlarında premium çözüm.' },
     ],
     gallery: [
-      { src: '/images/hizmetler/bioklimatik-pergola-1.jpg', alt: 'Bioklimatik pergola uygulama 1 — döner lamel sistemi' },
-      { src: '/images/hizmetler/bioklimatik-pergola-2.jpg', alt: 'Bioklimatik pergola uygulama 2 — villa dış mekan' },
-      { src: '/images/hizmetler/bioklimatik-pergola-3.jpg', alt: 'Bioklimatik pergola uygulama 3 — restoran dış alan' },
+      { src: '/images/hizmetler/bioklimatik-pergola-1.webp', alt: 'Bioklimatik pergola uygulama 1 — döner lamel sistemi' },
+      { src: '/images/hizmetler/bioklimatik-pergola-2.webp', alt: 'Bioklimatik pergola uygulama 2 — villa dış mekan' },
+      { src: '/images/hizmetler/bioklimatik-pergola-3.webp', alt: 'Bioklimatik pergola uygulama 3 — restoran dış alan' },
     ],
   },
   {
@@ -180,9 +180,9 @@ export const servicesDetail: ServiceDetail[] = [
       { icon: 'store-2-line', title: 'Ticari Projeler', desc: 'Otel, restoran ve ticari alanlarda akıllı gölgeleme.' },
     ],
     gallery: [
-      { src: '/images/hizmetler/otomatik-pergola-1.jpg', alt: 'Otomatik pergola uygulama 1 — motorlu kumaş sistemi' },
-      { src: '/images/hizmetler/otomatik-pergola-2.jpg', alt: 'Otomatik pergola uygulama 2 — akıllı ev entegrasyonu' },
-      { src: '/images/hizmetler/otomatik-pergola-3.jpg', alt: 'Otomatik pergola uygulama 3 — otel teras sistemi' },
+      { src: '/images/hizmetler/otomatik-pergola-1.webp', alt: 'Otomatik pergola uygulama 1 — motorlu kumaş sistemi' },
+      { src: '/images/hizmetler/otomatik-pergola-2.webp', alt: 'Otomatik pergola uygulama 2 — akıllı ev entegrasyonu' },
+      { src: '/images/hizmetler/otomatik-pergola-3.webp', alt: 'Otomatik pergola uygulama 3 — otel teras sistemi' },
     ],
   },
   {
@@ -205,9 +205,9 @@ export const servicesDetail: ServiceDetail[] = [
       { icon: 'home-3-line', title: 'Konut Projeleri', desc: 'Villa ve konut bahçelerinde dört mevsim konfor.' },
     ],
     gallery: [
-      { src: '/images/hizmetler/rollingroof-pergola-1.jpg', alt: 'Rollingroof pergola uygulama 1 — rulo çatı sistemi' },
-      { src: '/images/hizmetler/rollingroof-pergola-2.jpg', alt: 'Rollingroof pergola uygulama 2 — açık konum' },
-      { src: '/images/hizmetler/rollingroof-pergola-3.jpg', alt: 'Rollingroof pergola uygulama 3 — restoran dış alan' },
+      { src: '/images/hizmetler/rollingroof-pergola-1.webp', alt: 'Rollingroof pergola uygulama 1 — rulo çatı sistemi' },
+      { src: '/images/hizmetler/rollingroof-pergola-2.webp', alt: 'Rollingroof pergola uygulama 2 — açık konum' },
+      { src: '/images/hizmetler/rollingroof-pergola-3.webp', alt: 'Rollingroof pergola uygulama 3 — restoran dış alan' },
     ],
   },
   {
@@ -230,9 +230,9 @@ export const servicesDetail: ServiceDetail[] = [
       { icon: 'store-2-line', title: 'Ticari Alanlar', desc: 'İş yeri ve mağaza önlerinde pratik kapatma çözümü.' },
     ],
     gallery: [
-      { src: '/images/hizmetler/seffaf-branda-1.jpg', alt: 'Şeffaf branda uygulama 1 — restoran terası kapatma' },
-      { src: '/images/hizmetler/seffaf-branda-2.jpg', alt: 'Şeffaf branda uygulama 2 — PVC branda sistemi' },
-      { src: '/images/hizmetler/seffaf-branda-3.jpg', alt: 'Şeffaf branda uygulama 3 — konut balkon kapatma' },
+      { src: '/images/hizmetler/seffaf-branda-1.webp', alt: 'Şeffaf branda uygulama 1 — restoran terası kapatma' },
+      { src: '/images/hizmetler/seffaf-branda-2.webp', alt: 'Şeffaf branda uygulama 2 — PVC branda sistemi' },
+      { src: '/images/hizmetler/seffaf-branda-3.webp', alt: 'Şeffaf branda uygulama 3 — konut balkon kapatma' },
     ],
   },
   {
@@ -255,9 +255,9 @@ export const servicesDetail: ServiceDetail[] = [
       { icon: 'restaurant-line', title: 'Dış Mekan Alanları', desc: 'Restoran ve kafe dış alanlarında pratik kullanım.' },
     ],
     gallery: [
-      { src: '/images/hizmetler/seffaf-stor-branda-1.jpg', alt: 'Şeffaf stor branda uygulama 1 — balkon kapatma' },
-      { src: '/images/hizmetler/seffaf-stor-branda-2.jpg', alt: 'Şeffaf stor branda uygulama 2 — toplanmış konum' },
-      { src: '/images/hizmetler/seffaf-stor-branda-3.jpg', alt: 'Şeffaf stor branda uygulama 3 — ticari vitrin' },
+      { src: '/images/hizmetler/seffaf-stor-branda-1.webp', alt: 'Şeffaf stor branda uygulama 1 — balkon kapatma' },
+      { src: '/images/hizmetler/seffaf-stor-branda-2.webp', alt: 'Şeffaf stor branda uygulama 2 — toplanmış konum' },
+      { src: '/images/hizmetler/seffaf-stor-branda-3.webp', alt: 'Şeffaf stor branda uygulama 3 — ticari vitrin' },
     ],
   },
   {
@@ -280,9 +280,9 @@ export const servicesDetail: ServiceDetail[] = [
       { icon: 'building-line', title: 'Ticari Projeler', desc: 'Ofis ve iş yeri dış alanlarında profesyonel çözüm.' },
     ],
     gallery: [
-      { src: '/images/hizmetler/zip-perde-1.jpg', alt: 'Zip perde uygulama 1 — fermuar sistemi teras kapatma' },
-      { src: '/images/hizmetler/zip-perde-2.jpg', alt: 'Zip perde uygulama 2 — restoran dış alan kapatma' },
-      { src: '/images/hizmetler/zip-perde-3.jpg', alt: 'Zip perde uygulama 3 — ticari bina dış alan' },
+      { src: '/images/hizmetler/zip-perde-1.webp', alt: 'Zip perde uygulama 1 — fermuar sistemi teras kapatma' },
+      { src: '/images/hizmetler/zip-perde-2.webp', alt: 'Zip perde uygulama 2 — restoran dış alan kapatma' },
+      { src: '/images/hizmetler/zip-perde-3.webp', alt: 'Zip perde uygulama 3 — ticari bina dış alan' },
     ],
   },
 ];
