@@ -2,19 +2,16 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { resolve } from "node:path";
 import AutoImport from "unplugin-auto-import/vite";
-// import { readdyJsxRuntimeProxyPlugin } from "./vite.jsx-runtime-proxy";
 
 const base = process.env.BASE_PATH || "/";
 const isPreview = process.env.IS_PREVIEW ? true : false;
-//const proxyPlugins = isPreview ? [readdyJsxRuntimeProxyPlugin()] : [];
-// https://vite.dev/config/
+
 export default defineConfig({
   define: {
     __BASE_PATH__: JSON.stringify(base),
     __IS_PREVIEW__: JSON.stringify(isPreview),
   },
   plugins: [
-    // ...proxyPlugins,
     react(),
     AutoImport({
       imports: [
@@ -38,6 +35,7 @@ export default defineConfig({
             "useTransition",
             "startTransition",
             "lazy",
+            "Suspense",
             "memo",
             "forwardRef",
             "createContext",
@@ -58,18 +56,26 @@ export default defineConfig({
             "Outlet",
           ],
         },
-        // React i18n
-        {
-          "react-i18next": ["useTranslation", "Trans"],
-        },
       ],
       dts: true,
     }),
   ],
   base,
   build: {
-    sourcemap: true,
-    outDir: 'out',
+    sourcemap: false, // prod'da source map kapalı — dosya boyutunu düşürür
+    outDir: "out",
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules/react') || id.includes('node_modules/react-dom')) {
+            return 'react-vendor';
+          }
+          if (id.includes('node_modules/react-router-dom') || id.includes('node_modules/react-router')) {
+            return 'router';
+          }
+        },
+      },
+    },
   },
   resolve: {
     alias: {
