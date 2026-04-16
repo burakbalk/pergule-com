@@ -32,16 +32,10 @@
     <!-- LCP görseli preload -->
     <link rel="preload" as="image" href="/images/hero/main.webp" type="image/webp" fetchpriority="high" />
 
-    <!-- Google Fonts — non-blocking -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
-      onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript>
-      <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" />
-    </noscript>
+    <!-- Self-hosted fonts — no external round trips -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-latin-ext.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
 
 
   </head>
