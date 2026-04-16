@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none">
+  <!-- Pergola icon - stylized roof/louver symbol -->
+  <g>
+    <!-- Left vertical pillar -->
+    <rect x="2" y="14" width="4" height="30" rx="1" fill="#0f0f0f"/>
+    <!-- Right vertical pillar -->
+    <rect x="34" y="14" width="4" height="30" rx="1" fill="#0f0f0f"/>
+    <!-- Top beam -->
+    <rect x="0" y="8" width="40" height="5" rx="1.5" fill="#0f0f0f"/>
+    <!-- Louver slats -->
+    <rect x="4" y="2" width="32" height="3" rx="1" fill="#0f0f0f"/>
+    <rect x="6" y="6" width="28" height="2" rx="1" fill="#0f0f0f" opacity="0.6"/>
+  </g>
+  <!-- PERGULE wordmark -->
+  <text x="52" y="36"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="26"
+    font-weight="700"
+    fill="#0f0f0f"
+    letter-spacing="4">PERGULE</text>
+</svg>

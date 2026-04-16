@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="6" fill="#0f0f0f"/>
+  <!-- Pergola icon in gold -->
+  <!-- Left pillar -->
+  <rect x="4" y="12" width="3" height="17" rx="1" fill="#D4A853"/>
+  <!-- Right pillar -->
+  <rect x="25" y="12" width="3" height="17" rx="1" fill="#D4A853"/>
+  <!-- Top beam -->
+  <rect x="3" y="8" width="26" height="4" rx="1" fill="#D4A853"/>
+  <!-- Louver slats -->
+  <rect x="5" y="3" width="22" height="3" rx="1" fill="#D4A853"/>
+  <rect x="7" y="6.5" width="18" height="1.5" rx="0.75" fill="#D4A853" opacity="0.6"/>
+</svg>
