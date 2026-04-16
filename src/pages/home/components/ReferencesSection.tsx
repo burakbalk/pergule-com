@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Icon from '@/components/Icon';
 
 const refs = [
   {
@@ -56,7 +57,7 @@ export default function ReferencesSection() {
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#1a1a1a]/20 text-[#1a1a1a] text-sm font-semibold hover:bg-[#1a1a1a] hover:text-white transition-colors cursor-pointer whitespace-nowrap self-start sm:self-auto"
           >
             Tüm Referanslar
-            <i className="ri-arrow-right-line" aria-hidden="true"></i>
+            <Icon name="arrow-right-line" aria-hidden="true" />
           </Link>
         </div>
 

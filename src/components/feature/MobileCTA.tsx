@@ -1,4 +1,5 @@
 import { PHONE_HREF, WHATSAPP_HREF } from '@/lib/constants';
+import Icon from '@/components/Icon';
 
 export default function MobileCTA() {
   return (
@@ -13,7 +14,7 @@ export default function MobileCTA() {
         className="flex-1 flex items-center justify-center gap-2 py-4 bg-[#D4A853] text-[#0f0f0f] text-sm font-black cursor-pointer whitespace-nowrap"
         aria-label="Telefon ile arayın"
       >
-        <i className="ri-phone-fill text-base" aria-hidden="true"></i>
+        <Icon name="phone-fill" className="text-base" aria-hidden="true" />
         Hemen Ara
       </a>
       <a
@@ -23,7 +24,7 @@ export default function MobileCTA() {
         className="flex-1 flex items-center justify-center gap-2 py-4 bg-[#0f0f0f] text-white text-sm font-black cursor-pointer whitespace-nowrap border-l border-white/10"
         aria-label="WhatsApp ile yazın"
       >
-        <i className="ri-whatsapp-fill text-base" aria-hidden="true"></i>
+        <Icon name="whatsapp-fill" className="text-base" aria-hidden="true" />
         WhatsApp&apos;tan Yaz
       </a>
     </div>

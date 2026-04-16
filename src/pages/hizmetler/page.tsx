@@ -5,6 +5,7 @@ import MobileCTA from '@/components/feature/MobileCTA';
 import { servicesList } from '@/mocks/services';
 import { usePageSeo } from '@/lib/usePageSeo';
 import { PHONE_HREF, WHATSAPP_HREF, SITE_URL } from '@/lib/constants';
+import Icon from '@/components/Icon';
 
 const categories = [
   {
@@ -97,14 +98,14 @@ export default function ServicesPage() {
                     <div className="p-5">
                       <div className="flex items-center gap-3 mb-3">
                         <div className="w-9 h-9 flex items-center justify-center rounded-lg bg-amber-50" aria-hidden="true">
-                          <i className={`${service.icon} text-amber-600 text-lg`}></i>
+                          <Icon name={service.icon} className="text-amber-600 text-lg" aria-hidden="true" />
                         </div>
                         <h3 className="font-semibold text-stone-900 text-base">{service.title}</h3>
                       </div>
                       <p className="text-stone-500 text-sm leading-relaxed mb-4">{service.shortDesc}</p>
                       <span className="inline-flex items-center gap-1 text-amber-600 text-sm font-semibold group-hover:gap-2 transition-all">
                         Detaylı İncele
-                        <i className="ri-arrow-right-line" aria-hidden="true"></i>
+                        <Icon name="arrow-right-line" aria-hidden="true" />
                       </span>
                     </div>
                   </Link>
@@ -132,7 +133,7 @@ export default function ServicesPage() {
               href={PHONE_HREF}
               className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-amber-500 text-white font-semibold text-sm hover:bg-amber-600 transition-colors cursor-pointer whitespace-nowrap"
             >
-              <i className="ri-phone-line" aria-hidden="true"></i>
+              <Icon name="phone-line" aria-hidden="true" />
               Ücretsiz Keşif İçin Ara
             </a>
             <a
@@ -141,7 +142,7 @@ export default function ServicesPage() {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-white/30 text-white font-semibold text-sm hover:border-white transition-colors cursor-pointer whitespace-nowrap"
             >
-              <i className="ri-whatsapp-line" aria-hidden="true"></i>
+              <Icon name="whatsapp-line" aria-hidden="true" />
               Hızlı Teklif İçin WhatsApp
             </a>
           </div>

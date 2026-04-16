@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Icon from '@/components/Icon';
 
 const faqs = [
   {
@@ -83,7 +84,7 @@ export default function FaqSection() {
                   <div className={`w-7 h-7 flex items-center justify-center rounded-full shrink-0 transition-all duration-300 ${
                     open === idx ? 'bg-[#D4A853] text-[#0f0f0f] rotate-45' : 'bg-white/8 text-white/40'
                   }`}>
-                    <i className="ri-add-line text-sm"></i>
+                    <Icon name="add-line" className="text-sm" />
                   </div>
                 </button>
                 {open === idx && (

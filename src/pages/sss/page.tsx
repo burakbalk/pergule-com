@@ -4,11 +4,12 @@ import Footer from '@/components/feature/Footer';
 import MobileCTA from '@/components/feature/MobileCTA';
 import { usePageSeo } from '@/lib/usePageSeo';
 import { PHONE_HREF, WHATSAPP_HREF, SITE_URL } from '@/lib/constants';
+import Icon from '@/components/Icon';
 
 const faqGroups = [
   {
     group: 'Tente Sistemleri',
-    icon: 'ri-sun-line',
+    icon: 'sun-line',
     items: [
       { q: 'Tente sistemleri rüzgara dayanıklı mı?', a: 'Evet. Pergule\'nin tente sistemleri, özellikle Win Tente modeli, güçlendirilmiş kol mekanizması ve yüksek mukavemetli kumaşlarıyla rüzgara karşı üstün direnç sağlar. Motorlu sistemlerde rüzgar sensörü entegrasyonu da mümkündür.' },
       { q: 'Kasetli tente ile körüklü tente arasındaki fark nedir?', a: 'Kasetli tente, kullanılmadığında kumaşı tamamen alüminyum kasete çeker; bu sayede kumaş dış etkenlere karşı korunur. Körüklü tente ise katlanabilir körük yapısıyla geniş alanlara uyum sağlar ve daha ekonomik bir seçenektir.' },
@@ -18,7 +19,7 @@ const faqGroups = [
   },
   {
     group: 'Pergola Sistemleri',
-    icon: 'ri-home-gear-line',
+    icon: 'home-gear-line',
     items: [
       { q: 'Pergola sistemleri dört mevsim kullanılır mı?', a: 'Bioklimatik ve otomatik pergola sistemlerimiz dört mevsim kullanım için tasarlanmıştır. Döner lamel yapısı sayesinde yaz aylarında hava sirkülasyonu sağlanırken, kış aylarında lameller kapatılarak yağmur ve soğuktan korunulur.' },
       { q: 'Bioklimatik pergola ile otomatik pergola arasındaki fark nedir?', a: 'Bioklimatik pergola, döner alüminyum lamellerle hava ve güneş kontrolü sağlar. Otomatik pergola ise motorlu kumaş sistemiyle çalışır; kumaş açılıp kapanarak gölgeleme ve yağmur koruması sağlar.' },
@@ -28,7 +29,7 @@ const faqGroups = [
   },
   {
     group: 'Branda & Perde Sistemleri',
-    icon: 'ri-shield-check-line',
+    icon: 'shield-check-line',
     items: [
       { q: 'Zip perde ne işe yarar?', a: 'Zip perde, fermuar sistemiyle rüzgara karşı sızdırmaz bir kapatma çözümü sunar. Terası veya balkonunuzu dört mevsim kullanılabilir hale getirir; rüzgar, yağmur ve böceklere karşı etkili koruma sağlar.' },
       { q: 'Şeffaf branda yağmur geçirir mi?', a: 'Hayır. Pergule\'nin şeffaf PVC brandaları, yüksek yoğunluklu malzeme yapısıyla yağmura karşı tam su geçirmezlik sağlar. Doğru montaj ve kaliteli profil sistemiyle sızdırmazlık garantisi sunulmaktadır.' },
@@ -38,7 +39,7 @@ const faqGroups = [
   },
   {
     group: 'Genel Sorular',
-    icon: 'ri-question-line',
+    icon: 'question-line',
     items: [
       { q: 'Kurulum ne kadar sürer?', a: 'Standart bir tente kurulumu genellikle 1 gün içinde tamamlanır. Pergola sistemleri 2-4 gün, büyük ticari projeler ise 1 haftaya kadar sürebilir. Keşif sonrasında size net bir kurulum takvimi sunulur.' },
       { q: 'Bakım ve onarım hizmeti veriyor musunuz?', a: 'Evet. Satış sonrası bakım ve onarım hizmetleri sunuyoruz. Periyodik bakım, kumaş değişimi, mekanik onarım ve teknik destek için ekibimize her zaman ulaşabilirsiniz.' },
@@ -90,7 +91,7 @@ export default function SSSPage() {
               {/* Group header */}
               <div className="flex items-center gap-3 mb-5 pb-4 border-b border-white/10">
                 <div className="w-9 h-9 flex items-center justify-center rounded-lg bg-[#D4A853]/15" aria-hidden="true">
-                  <i className={`${group.icon} text-[#D4A853] text-lg`}></i>
+                  <Icon name={group.icon} className="text-[#D4A853] text-lg" />
                 </div>
                 <h2 className="text-white font-bold text-lg" style={{ fontFamily: "'Playfair Display', serif" }}>
                   {group.group}
@@ -124,7 +125,7 @@ export default function SSSPage() {
                           }`}
                           aria-hidden="true"
                         >
-                          <i className="ri-add-line text-sm"></i>
+                          <Icon name="add-line" className="text-sm" />
                         </div>
                       </button>
                       {isOpen && (
@@ -152,10 +153,10 @@ export default function SSSPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a href={PHONE_HREF} className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#0f0f0f] text-white font-bold text-sm hover:bg-[#1a1a1a] transition-colors cursor-pointer whitespace-nowrap">
-              <i className="ri-phone-fill" aria-hidden="true"></i> Hemen Ara
+              <Icon name="phone-fill" aria-hidden="true" /> Hemen Ara
             </a>
             <a href={WHATSAPP_HREF} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border-2 border-[#0f0f0f]/30 text-[#0f0f0f] font-bold text-sm hover:border-[#0f0f0f] transition-colors cursor-pointer whitespace-nowrap">
-              <i className="ri-whatsapp-line" aria-hidden="true"></i> WhatsApp&apos;tan Yaz
+              <Icon name="whatsapp-line" aria-hidden="true" /> WhatsApp&apos;tan Yaz
             </a>
           </div>
         </div>

@@ -7,6 +7,7 @@ import { getServiceDetail } from '@/mocks/servicesDetail';
 import { servicesList } from '@/mocks/services';
 import { usePageSeo } from '@/lib/usePageSeo';
 import { PHONE_HREF, WHATSAPP_HREF, SITE_URL } from '@/lib/constants';
+import Icon from '@/components/Icon';
 
 export default function ServiceDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -75,9 +76,9 @@ function ServiceDetailContent({
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-white/40 text-xs mb-8 flex-wrap" aria-label="Sayfa yolu">
             <Link to="/" className="hover:text-white/70 transition-colors cursor-pointer">Ana Sayfa</Link>
-            <i className="ri-arrow-right-s-line" aria-hidden="true"></i>
+            <Icon name="arrow-right-s-line" aria-hidden="true" />
             <Link to="/hizmetler" className="hover:text-white/70 transition-colors cursor-pointer">Hizmetler</Link>
-            <i className="ri-arrow-right-s-line" aria-hidden="true"></i>
+            <Icon name="arrow-right-s-line" aria-hidden="true" />
             <span className="text-[#D4A853]" aria-current="page">{detail.title}</span>
           </nav>
 
@@ -99,7 +100,7 @@ function ServiceDetailContent({
               href={PHONE_HREF}
               className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#D4A853] text-[#0f0f0f] font-bold text-sm hover:bg-[#c49840] transition-colors cursor-pointer whitespace-nowrap"
             >
-              <i className="ri-phone-fill" aria-hidden="true"></i>
+              <Icon name="phone-fill" aria-hidden="true" />
               Ücretsiz Keşif İçin Ara
             </a>
             <a
@@ -108,7 +109,7 @@ function ServiceDetailContent({
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-white/20 text-white font-semibold text-sm hover:border-white/40 transition-colors cursor-pointer whitespace-nowrap"
             >
-              <i className="ri-whatsapp-line" aria-hidden="true"></i>
+              <Icon name="whatsapp-line" aria-hidden="true" />
               Hızlı Teklif İçin WhatsApp
             </a>
           </div>
@@ -150,7 +151,7 @@ function ServiceDetailContent({
                 {detail.advantages.map((adv) => (
                   <li key={adv} className="flex items-start gap-3">
                     <div className="w-5 h-5 flex items-center justify-center rounded-full bg-[#D4A853]/20 shrink-0 mt-0.5" aria-hidden="true">
-                      <i className="ri-check-line text-[#D4A853] text-xs"></i>
+                      <Icon name="check-line" className="text-[#D4A853] text-xs" />
                     </div>
                     <span className="text-white/60 text-sm leading-relaxed">{adv}</span>
                   </li>
@@ -179,7 +180,7 @@ function ServiceDetailContent({
             {detail.usageAreas.map((area) => (
               <div key={area.title} className="p-6 rounded-2xl border border-white/8 bg-white/3 hover:border-[#D4A853]/30 hover:bg-white/5 transition-all duration-300">
                 <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#D4A853]/15 mb-5" aria-hidden="true">
-                  <i className={`${area.icon} text-[#D4A853] text-2xl`}></i>
+                  <Icon name={area.icon} className="text-[#D4A853] text-2xl" aria-hidden="true" />
                 </div>
                 <h3 className="text-white font-semibold text-base mb-2">{area.title}</h3>
                 <p className="text-white/40 text-sm leading-relaxed">{area.desc}</p>
@@ -223,7 +224,7 @@ function ServiceDetailContent({
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
                   <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white/0 group-hover:bg-white/20 transition-all" aria-hidden="true">
-                    <i className="ri-zoom-in-line text-white opacity-0 group-hover:opacity-100 transition-opacity text-xl"></i>
+                    <Icon name="zoom-in-line" className="text-white opacity-0 group-hover:opacity-100 transition-opacity text-xl" />
                   </div>
                 </div>
               </div>
@@ -246,14 +247,14 @@ function ServiceDetailContent({
             onClick={() => setLightbox(null)}
             aria-label="Kapat"
           >
-            <i className="ri-close-line text-xl" aria-hidden="true"></i>
+            <Icon name="close-line" className="text-xl" aria-hidden="true" />
           </button>
           <button
             className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors cursor-pointer"
             onClick={(e) => { e.stopPropagation(); prev(); }}
             aria-label="Önceki görsel"
           >
-            <i className="ri-arrow-left-line text-xl" aria-hidden="true"></i>
+            <Icon name="arrow-left-line" className="text-xl" aria-hidden="true" />
           </button>
           <img
             src={detail.gallery[lightbox].src}
@@ -266,7 +267,7 @@ function ServiceDetailContent({
             onClick={(e) => { e.stopPropagation(); next(); }}
             aria-label="Sonraki görsel"
           >
-            <i className="ri-arrow-right-line text-xl" aria-hidden="true"></i>
+            <Icon name="arrow-right-line" className="text-xl" aria-hidden="true" />
           </button>
           <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2">
             {detail.gallery.map((_, i) => (
@@ -298,7 +299,7 @@ function ServiceDetailContent({
               href={PHONE_HREF}
               className="flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#0f0f0f] text-white font-bold text-sm hover:bg-[#1a1a1a] transition-colors cursor-pointer whitespace-nowrap"
             >
-              <i className="ri-phone-fill" aria-hidden="true"></i>
+              <Icon name="phone-fill" aria-hidden="true" />
               Hemen Ara
             </a>
             <a
@@ -307,7 +308,7 @@ function ServiceDetailContent({
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-[#0f0f0f]/30 text-[#0f0f0f] font-bold text-sm hover:border-[#0f0f0f] transition-colors cursor-pointer whitespace-nowrap"
             >
-              <i className="ri-whatsapp-line" aria-hidden="true"></i>
+              <Icon name="whatsapp-line" aria-hidden="true" />
               Hızlı Teklif İçin WhatsApp
             </a>
           </div>

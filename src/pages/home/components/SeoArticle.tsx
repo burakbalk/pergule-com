@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { PHONE_HREF, WHATSAPP_HREF } from '@/lib/constants';
+import Icon from '@/components/Icon';
 
 const articleSections = [
   {
@@ -171,7 +172,7 @@ export default function SeoArticle() {
                       {sub.bullets.map((b) => (
                         <li key={b} className="flex items-start gap-2.5">
                           <div className="w-4 h-4 flex items-center justify-center rounded-full bg-[#D4A853]/20 shrink-0 mt-0.5" aria-hidden="true">
-                            <i className="ri-check-line text-[#D4A853] text-[10px]"></i>
+                            <Icon name="check-line" className="text-[#D4A853] text-[10px]" />
                           </div>
                           <span className="text-white/40 text-xs leading-relaxed">{b}</span>
                         </li>
@@ -195,7 +196,7 @@ export default function SeoArticle() {
               href={PHONE_HREF}
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#D4A853] text-[#0f0f0f] font-bold text-sm hover:bg-[#c49840] transition-colors cursor-pointer whitespace-nowrap"
             >
-              <i className="ri-phone-fill text-sm" aria-hidden="true"></i>
+              <Icon name="phone-fill" className="text-sm" aria-hidden="true" />
               Hemen Ara
             </a>
             <a
@@ -204,7 +205,7 @@ export default function SeoArticle() {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-white/20 text-white font-semibold text-sm hover:border-white/40 transition-colors cursor-pointer whitespace-nowrap"
             >
-              <i className="ri-whatsapp-line text-sm" aria-hidden="true"></i>
+              <Icon name="whatsapp-line" className="text-sm" aria-hidden="true" />
               WhatsApp&apos;tan Yaz
             </a>
           </div>

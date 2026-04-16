@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { PHONE_DISPLAY, PHONE_HREF, WHATSAPP_HREF } from '@/lib/constants';
+import Icon from '@/components/Icon';
 
 const navLinks = [
   { label: 'Ana Sayfa', href: '/' },
@@ -69,7 +70,7 @@ export default function Navbar() {
             className="flex items-center gap-1.5 px-4 py-2 text-[13px] font-semibold text-white/80 hover:text-white transition-colors cursor-pointer whitespace-nowrap"
             aria-label={`Telefon: ${PHONE_DISPLAY}`}
           >
-            <i className="ri-phone-line text-[#D4A853]" aria-hidden="true"></i>
+            <Icon name="phone-line" className="text-[#D4A853]" aria-hidden="true" />
             {PHONE_DISPLAY}
           </a>
           <a
@@ -79,7 +80,7 @@ export default function Navbar() {
             className="flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-[#D4A853] text-[#0f0f0f] text-[13px] font-bold hover:bg-[#c49840] transition-colors cursor-pointer whitespace-nowrap"
             aria-label="WhatsApp ile iletişime geçin"
           >
-            <i className="ri-whatsapp-line text-sm" aria-hidden="true"></i>
+            <Icon name="whatsapp-line" className="text-sm" aria-hidden="true" />
             WhatsApp
           </a>
         </div>
@@ -91,7 +92,7 @@ export default function Navbar() {
           aria-label={menuOpen ? 'Menüyü kapat' : 'Menüyü aç'}
           aria-expanded={menuOpen}
         >
-          <i className={`text-xl ${menuOpen ? 'ri-close-line' : 'ri-menu-3-line'}`} aria-hidden="true"></i>
+          <Icon name={menuOpen ? 'close-line' : 'menu-3-line'} className="text-xl" aria-hidden="true" />
         </button>
       </div>
 
@@ -119,7 +120,7 @@ export default function Navbar() {
                 className="flex-1 flex items-center justify-center gap-2 py-3 rounded-full bg-[#D4A853] text-[#0f0f0f] text-sm font-bold cursor-pointer whitespace-nowrap"
                 aria-label="Telefon ile arayın"
               >
-                <i className="ri-phone-line" aria-hidden="true"></i> Ara
+                <Icon name="phone-line" aria-hidden="true" /> Ara
               </a>
               <a
                 href={WHATSAPP_HREF}
@@ -128,7 +129,7 @@ export default function Navbar() {
                 className="flex-1 flex items-center justify-center gap-2 py-3 rounded-full border border-white/20 text-white text-sm font-semibold cursor-pointer whitespace-nowrap"
                 aria-label="WhatsApp ile yazın"
               >
-                <i className="ri-whatsapp-line" aria-hidden="true"></i> WhatsApp
+                <Icon name="whatsapp-line" aria-hidden="true" /> WhatsApp
               </a>
             </div>
           </nav>

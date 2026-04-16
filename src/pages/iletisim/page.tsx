@@ -3,6 +3,7 @@ import Footer from '@/components/feature/Footer';
 import MobileCTA from '@/components/feature/MobileCTA';
 import { usePageSeo } from '@/lib/usePageSeo';
 import { PHONE_HREF, WHATSAPP_HREF, PHONE_DISPLAY, ADDRESS, EMAIL, SITE_URL } from '@/lib/constants';
+import Icon from '@/components/Icon';
 
 export default function ContactPage() {
   usePageSeo({
@@ -53,7 +54,7 @@ export default function ContactPage() {
               aria-label={`Telefon: ${PHONE_DISPLAY}`}
             >
               <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#0f0f0f]/15" aria-hidden="true">
-                <i className="ri-phone-fill text-lg"></i>
+                <Icon name="phone-fill" className="text-lg" />
               </div>
               <div className="text-left">
                 <p className="text-xs font-semibold opacity-70 leading-none mb-0.5">Ücretsiz Keşif İçin</p>
@@ -68,7 +69,7 @@ export default function ContactPage() {
               aria-label="WhatsApp'tan hızlı teklif alın"
             >
               <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10" aria-hidden="true">
-                <i className="ri-whatsapp-line text-lg text-[#D4A853]"></i>
+                <Icon name="whatsapp-line" className="text-lg text-[#D4A853]" />
               </div>
               <div className="text-left">
                 <p className="text-xs font-semibold opacity-50 leading-none mb-0.5">Hızlı Teklif İçin</p>
@@ -80,11 +81,11 @@ export default function ContactPage() {
           {/* Contact info */}
           <div className="mb-10 flex flex-col sm:flex-row justify-center gap-6 text-sm">
             <a href={`mailto:${EMAIL}`} className="flex items-center justify-center gap-2 text-white/40 hover:text-white/70 transition-colors">
-              <i className="ri-mail-line text-[#D4A853]" aria-hidden="true"></i>
+              <Icon name="mail-line" className="text-[#D4A853]" aria-hidden="true" />
               <span>{EMAIL}</span>
             </a>
             <div className="flex items-center justify-center gap-2 text-white/40">
-              <i className="ri-map-pin-line text-[#D4A853]" aria-hidden="true"></i>
+              <Icon name="map-pin-line" className="text-[#D4A853]" aria-hidden="true" />
               <address className="not-italic">{ADDRESS}</address>
             </div>
           </div>
@@ -92,13 +93,13 @@ export default function ContactPage() {
           {/* Trust signals */}
           <div className="flex flex-wrap justify-center gap-6 pt-10 border-t border-white/8">
             {[
-              { icon: 'ri-search-eye-line', text: 'Ücretsiz Keşif' },
-              { icon: 'ri-time-line', text: 'Hızlı Dönüş' },
-              { icon: 'ri-shield-check-line', text: 'Garantili Ürünler' },
-              { icon: 'ri-customer-service-2-line', text: 'Satış Sonrası Destek' },
+              { icon: 'search-eye-line', text: 'Ücretsiz Keşif' },
+              { icon: 'time-line', text: 'Hızlı Dönüş' },
+              { icon: 'shield-check-line', text: 'Garantili Ürünler' },
+              { icon: 'customer-service-2-line', text: 'Satış Sonrası Destek' },
             ].map((item) => (
               <div key={item.text} className="flex items-center gap-2">
-                <i className={`${item.icon} text-[#D4A853] text-base`} aria-hidden="true"></i>
+                <Icon name={item.icon} className="text-[#D4A853] text-base" aria-hidden="true" />
                 <span className="text-white/40 text-xs font-medium">{item.text}</span>
               </div>
             ))}

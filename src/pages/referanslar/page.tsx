@@ -4,6 +4,7 @@ import Footer from '@/components/feature/Footer';
 import MobileCTA from '@/components/feature/MobileCTA';
 import { usePageSeo } from '@/lib/usePageSeo';
 import { PHONE_HREF, WHATSAPP_HREF, SITE_URL } from '@/lib/constants';
+import Icon from '@/components/Icon';
 
 const categories = ['Tümü', 'Tente', 'Pergola', 'Branda & Perde'];
 
@@ -123,7 +124,7 @@ export default function ReferencesPage() {
                   <span className="text-white/40 text-xs mt-1">{proj.cat}</span>
                 </div>
                 <div className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-black/40 text-white opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true">
-                  <i className="ri-zoom-in-line text-sm"></i>
+                  <Icon name="zoom-in-line" className="text-sm" />
                 </div>
               </div>
             ))}
@@ -145,14 +146,14 @@ export default function ReferencesPage() {
             onClick={() => setLightbox(null)}
             aria-label="Kapat"
           >
-            <i className="ri-close-line text-xl" aria-hidden="true"></i>
+            <Icon name="close-line" className="text-xl" aria-hidden="true" />
           </button>
           <button
             className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors cursor-pointer"
             onClick={(e) => { e.stopPropagation(); prev(); }}
             aria-label="Önceki proje"
           >
-            <i className="ri-arrow-left-line text-xl" aria-hidden="true"></i>
+            <Icon name="arrow-left-line" className="text-xl" aria-hidden="true" />
           </button>
           <div className="flex flex-col items-center gap-4" onClick={(e) => e.stopPropagation()}>
             <img
@@ -181,7 +182,7 @@ export default function ReferencesPage() {
             onClick={(e) => { e.stopPropagation(); next(); }}
             aria-label="Sonraki proje"
           >
-            <i className="ri-arrow-right-line text-xl" aria-hidden="true"></i>
+            <Icon name="arrow-right-line" className="text-xl" aria-hidden="true" />
           </button>
         </div>
       )}
@@ -197,10 +198,10 @@ export default function ReferencesPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a href={PHONE_HREF} className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#0f0f0f] text-white font-bold text-sm hover:bg-[#1a1a1a] transition-colors cursor-pointer whitespace-nowrap">
-              <i className="ri-phone-fill" aria-hidden="true"></i> Hemen Ara
+              <Icon name="phone-fill" aria-hidden="true" /> Hemen Ara
             </a>
             <a href={WHATSAPP_HREF} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border-2 border-[#0f0f0f]/30 text-[#0f0f0f] font-bold text-sm hover:border-[#0f0f0f] transition-colors cursor-pointer whitespace-nowrap">
-              <i className="ri-whatsapp-line" aria-hidden="true"></i> WhatsApp&apos;tan Yaz
+              <Icon name="whatsapp-line" aria-hidden="true" /> WhatsApp&apos;tan Yaz
             </a>
           </div>
         </div>

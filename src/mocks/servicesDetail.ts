@@ -25,9 +25,9 @@ export const servicesDetail: ServiceDetail[] = [
       'Her ölçüye özel üretim',
     ],
     usageAreas: [
-      { icon: 'ri-home-3-line', title: 'Konut Terasları', desc: 'Ev terasları ve balkonlar için ideal gölgeleme çözümü.' },
-      { icon: 'ri-store-2-line', title: 'Cafe & Restoranlar', desc: 'Dış mekan oturma alanlarını güneşten ve yağmurdan korur.' },
-      { icon: 'ri-building-line', title: 'Ticari Binalar', desc: 'Ofis ve iş yeri girişlerinde şık ve işlevsel kullanım.' },
+      { icon: 'home-3-line', title: 'Konut Terasları', desc: 'Ev terasları ve balkonlar için ideal gölgeleme çözümü.' },
+      { icon: 'store-2-line', title: 'Cafe & Restoranlar', desc: 'Dış mekan oturma alanlarını güneşten ve yağmurdan korur.' },
+      { icon: 'building-line', title: 'Ticari Binalar', desc: 'Ofis ve iş yeri girişlerinde şık ve işlevsel kullanım.' },
     ],
     gallery: [
       { src: '/images/hizmetler/kasetli-tente-1.jpg', alt: 'Kasetli tente uygulama 1 — teras gölgeleme sistemi' },
@@ -50,9 +50,9 @@ export const servicesDetail: ServiceDetail[] = [
       'Hızlı açılıp kapanma',
     ],
     usageAreas: [
-      { icon: 'ri-plant-line', title: 'Bahçe Alanları', desc: 'Büyük bahçe ve teras alanlarında geniş gölgeleme.' },
-      { icon: 'ri-store-2-line', title: 'Ticari Alanlar', desc: 'Market, dükkan ve iş yeri önlerinde pratik kullanım.' },
-      { icon: 'ri-hotel-line', title: 'Otel & Tatil Köyleri', desc: 'Havuz başı ve dış mekan alanlarında konforlu gölge.' },
+      { icon: 'plant-line', title: 'Bahçe Alanları', desc: 'Büyük bahçe ve teras alanlarında geniş gölgeleme.' },
+      { icon: 'store-2-line', title: 'Ticari Alanlar', desc: 'Market, dükkan ve iş yeri önlerinde pratik kullanım.' },
+      { icon: 'hotel-line', title: 'Otel & Tatil Köyleri', desc: 'Havuz başı ve dış mekan alanlarında konforlu gölge.' },
     ],
     gallery: [
       { src: '/images/hizmetler/koruklu-tente-1.jpg', alt: 'Körüklü tente uygulama 1 — geniş teras gölgeleme' },
@@ -75,9 +75,9 @@ export const servicesDetail: ServiceDetail[] = [
       'Uzun ömürlü mekanik sistem',
     ],
     usageAreas: [
-      { icon: 'ri-home-3-line', title: 'Ev Terasları', desc: 'Güneşin açısına göre ayarlanabilen esnek gölgeleme.' },
-      { icon: 'ri-restaurant-line', title: 'Restoran Bahçeleri', desc: 'Dış mekan yemek alanlarında konforlu gölge çözümü.' },
-      { icon: 'ri-building-4-line', title: 'Apartman Balkonları', desc: 'Dar ve geniş balkonlara uyum sağlayan esnek sistem.' },
+      { icon: 'home-3-line', title: 'Ev Terasları', desc: 'Güneşin açısına göre ayarlanabilen esnek gölgeleme.' },
+      { icon: 'restaurant-line', title: 'Restoran Bahçeleri', desc: 'Dış mekan yemek alanlarında konforlu gölge çözümü.' },
+      { icon: 'building-4-line', title: 'Apartman Balkonları', desc: 'Dar ve geniş balkonlara uyum sağlayan esnek sistem.' },
     ],
     gallery: [
       { src: '/images/hizmetler/mafsalli-tente-1.jpg', alt: 'Mafsallı tente uygulama 1 — teras gölgeleme' },
@@ -100,9 +100,9 @@ export const servicesDetail: ServiceDetail[] = [
       'Özel ölçüye göre üretim',
     ],
     usageAreas: [
-      { icon: 'ri-corner-down-right-line', title: 'Köşe Teraslar', desc: 'L ve T şeklindeki teras alanlarında kusursuz uyum.' },
-      { icon: 'ri-store-3-line', title: 'Geniş Ticari Alanlar', desc: 'Büyük dış mekan alanlarını tek sistemle kapatma.' },
-      { icon: 'ri-hotel-bed-line', title: 'Otel Terasları', desc: 'Farklı geometrilerdeki otel teras alanları için ideal.' },
+      { icon: 'corner-down-right-line', title: 'Köşe Teraslar', desc: 'L ve T şeklindeki teras alanlarında kusursuz uyum.' },
+      { icon: 'store-3-line', title: 'Geniş Ticari Alanlar', desc: 'Büyük dış mekan alanlarını tek sistemle kapatma.' },
+      { icon: 'hotel-bed-line', title: 'Otel Terasları', desc: 'Farklı geometrilerdeki otel teras alanları için ideal.' },
     ],
     gallery: [
       { src: '/images/hizmetler/t-model-tente-1.jpg', alt: 'T Model tente uygulama 1 — köşe teras gölgeleme' },
@@ -125,9 +125,9 @@ export const servicesDetail: ServiceDetail[] = [
       'Motorlu otomatik kapanma sistemi',
     ],
     usageAreas: [
-      { icon: 'ri-windy-line', title: 'Rüzgarlı Bölgeler', desc: 'Sahil ve açık alanlarda güvenli gölgeleme çözümü.' },
-      { icon: 'ri-building-2-line', title: 'Yüksek Katlı Binalar', desc: 'Rüzgar etkisinin yoğun olduğu üst kat terasları.' },
-      { icon: 'ri-hotel-line', title: 'Otel & Tatil Tesisleri', desc: 'Açık alanlarda dört mevsim güvenli kullanım.' },
+      { icon: 'windy-line', title: 'Rüzgarlı Bölgeler', desc: 'Sahil ve açık alanlarda güvenli gölgeleme çözümü.' },
+      { icon: 'building-2-line', title: 'Yüksek Katlı Binalar', desc: 'Rüzgar etkisinin yoğun olduğu üst kat terasları.' },
+      { icon: 'hotel-line', title: 'Otel & Tatil Tesisleri', desc: 'Açık alanlarda dört mevsim güvenli kullanım.' },
     ],
     gallery: [
       { src: '/images/hizmetler/win-tente-1.jpg', alt: 'Win tente uygulama 1 — rüzgara dayanıklı tente sistemi' },
@@ -150,9 +150,9 @@ export const servicesDetail: ServiceDetail[] = [
       'Paslanmaz alüminyum yapı',
     ],
     usageAreas: [
-      { icon: 'ri-home-gear-line', title: 'Villa & Konutlar', desc: 'Lüks konut projelerinde dört mevsim dış mekan konforu.' },
-      { icon: 'ri-restaurant-2-line', title: 'Restoran & Kafeler', desc: 'Dış mekan yemek alanlarını her mevsim aktif tutun.' },
-      { icon: 'ri-hotel-line', title: 'Otel & SPA Alanları', desc: 'Havuz başı ve teras alanlarında premium çözüm.' },
+      { icon: 'home-gear-line', title: 'Villa & Konutlar', desc: 'Lüks konut projelerinde dört mevsim dış mekan konforu.' },
+      { icon: 'restaurant-2-line', title: 'Restoran & Kafeler', desc: 'Dış mekan yemek alanlarını her mevsim aktif tutun.' },
+      { icon: 'hotel-line', title: 'Otel & SPA Alanları', desc: 'Havuz başı ve teras alanlarında premium çözüm.' },
     ],
     gallery: [
       { src: '/images/hizmetler/bioklimatik-pergola-1.jpg', alt: 'Bioklimatik pergola uygulama 1 — döner lamel sistemi' },
@@ -175,9 +175,9 @@ export const servicesDetail: ServiceDetail[] = [
       'Güçlü alüminyum taşıyıcı yapı',
     ],
     usageAreas: [
-      { icon: 'ri-remote-control-line', title: 'Akıllı Evler', desc: 'Ev otomasyon sistemleriyle entegre çalışır.' },
-      { icon: 'ri-building-line', title: 'Lüks Konutlar', desc: 'Villa ve rezidans projelerinde premium çözüm.' },
-      { icon: 'ri-store-2-line', title: 'Ticari Projeler', desc: 'Otel, restoran ve ticari alanlarda akıllı gölgeleme.' },
+      { icon: 'remote-control-line', title: 'Akıllı Evler', desc: 'Ev otomasyon sistemleriyle entegre çalışır.' },
+      { icon: 'building-line', title: 'Lüks Konutlar', desc: 'Villa ve rezidans projelerinde premium çözüm.' },
+      { icon: 'store-2-line', title: 'Ticari Projeler', desc: 'Otel, restoran ve ticari alanlarda akıllı gölgeleme.' },
     ],
     gallery: [
       { src: '/images/hizmetler/otomatik-pergola-1.jpg', alt: 'Otomatik pergola uygulama 1 — motorlu kumaş sistemi' },
@@ -200,9 +200,9 @@ export const servicesDetail: ServiceDetail[] = [
       'Motorlu seçenek mevcuttur',
     ],
     usageAreas: [
-      { icon: 'ri-contrast-drop-line', title: 'Teras Alanları', desc: 'Her hava koşulunda kullanılabilir teras çözümü.' },
-      { icon: 'ri-restaurant-line', title: 'Dış Mekan Restoranlar', desc: 'Yağmurda kapanıp güneşte açılan esnek sistem.' },
-      { icon: 'ri-home-3-line', title: 'Konut Projeleri', desc: 'Villa ve konut bahçelerinde dört mevsim konfor.' },
+      { icon: 'contrast-drop-line', title: 'Teras Alanları', desc: 'Her hava koşulunda kullanılabilir teras çözümü.' },
+      { icon: 'restaurant-line', title: 'Dış Mekan Restoranlar', desc: 'Yağmurda kapanıp güneşte açılan esnek sistem.' },
+      { icon: 'home-3-line', title: 'Konut Projeleri', desc: 'Villa ve konut bahçelerinde dört mevsim konfor.' },
     ],
     gallery: [
       { src: '/images/hizmetler/rollingroof-pergola-1.jpg', alt: 'Rollingroof pergola uygulama 1 — rulo çatı sistemi' },
@@ -225,9 +225,9 @@ export const servicesDetail: ServiceDetail[] = [
       'Hızlı montaj ve demontaj',
     ],
     usageAreas: [
-      { icon: 'ri-restaurant-2-line', title: 'Restoran & Kafeler', desc: 'Dış mekan alanlarını dört mevsim aktif tutun.' },
-      { icon: 'ri-home-3-line', title: 'Konut Terasları', desc: 'Balkon ve terasları rüzgar ve yağmurdan koruyun.' },
-      { icon: 'ri-store-2-line', title: 'Ticari Alanlar', desc: 'İş yeri ve mağaza önlerinde pratik kapatma çözümü.' },
+      { icon: 'restaurant-2-line', title: 'Restoran & Kafeler', desc: 'Dış mekan alanlarını dört mevsim aktif tutun.' },
+      { icon: 'home-3-line', title: 'Konut Terasları', desc: 'Balkon ve terasları rüzgar ve yağmurdan koruyun.' },
+      { icon: 'store-2-line', title: 'Ticari Alanlar', desc: 'İş yeri ve mağaza önlerinde pratik kapatma çözümü.' },
     ],
     gallery: [
       { src: '/images/hizmetler/seffaf-branda-1.jpg', alt: 'Şeffaf branda uygulama 1 — restoran terası kapatma' },
@@ -250,9 +250,9 @@ export const servicesDetail: ServiceDetail[] = [
       'Kolay bakım ve temizlik',
     ],
     usageAreas: [
-      { icon: 'ri-stack-line', title: 'Balkon & Teraslar', desc: 'Toplanabilir yapısıyla balkon ve teraslarda ideal.' },
-      { icon: 'ri-store-2-line', title: 'Vitrin & Mağazalar', desc: 'Mağaza vitrinlerinde estetik kapatma çözümü.' },
-      { icon: 'ri-restaurant-line', title: 'Dış Mekan Alanları', desc: 'Restoran ve kafe dış alanlarında pratik kullanım.' },
+      { icon: 'stack-line', title: 'Balkon & Teraslar', desc: 'Toplanabilir yapısıyla balkon ve teraslarda ideal.' },
+      { icon: 'store-2-line', title: 'Vitrin & Mağazalar', desc: 'Mağaza vitrinlerinde estetik kapatma çözümü.' },
+      { icon: 'restaurant-line', title: 'Dış Mekan Alanları', desc: 'Restoran ve kafe dış alanlarında pratik kullanım.' },
     ],
     gallery: [
       { src: '/images/hizmetler/seffaf-stor-branda-1.jpg', alt: 'Şeffaf stor branda uygulama 1 — balkon kapatma' },
@@ -275,9 +275,9 @@ export const servicesDetail: ServiceDetail[] = [
       'Böcek ve toz geçirmez yapı',
     ],
     usageAreas: [
-      { icon: 'ri-shield-check-line', title: 'Teras & Balkonlar', desc: 'Rüzgar ve yağmura karşı tam koruma sağlar.' },
-      { icon: 'ri-restaurant-2-line', title: 'Restoran Dış Alanları', desc: 'Dört mevsim aktif dış mekan yemek alanı.' },
-      { icon: 'ri-building-line', title: 'Ticari Projeler', desc: 'Ofis ve iş yeri dış alanlarında profesyonel çözüm.' },
+      { icon: 'shield-check-line', title: 'Teras & Balkonlar', desc: 'Rüzgar ve yağmura karşı tam koruma sağlar.' },
+      { icon: 'restaurant-2-line', title: 'Restoran Dış Alanları', desc: 'Dört mevsim aktif dış mekan yemek alanı.' },
+      { icon: 'building-line', title: 'Ticari Projeler', desc: 'Ofis ve iş yeri dış alanlarında profesyonel çözüm.' },
     ],
     gallery: [
       { src: '/images/hizmetler/zip-perde-1.jpg', alt: 'Zip perde uygulama 1 — fermuar sistemi teras kapatma' },

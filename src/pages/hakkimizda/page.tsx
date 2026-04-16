@@ -3,6 +3,7 @@ import Footer from '@/components/feature/Footer';
 import MobileCTA from '@/components/feature/MobileCTA';
 import { usePageSeo } from '@/lib/usePageSeo';
 import { PHONE_HREF, WHATSAPP_HREF, SITE_URL } from '@/lib/constants';
+import Icon from '@/components/Icon';
 
 const milestones = [
   { year: '2014', title: 'Kuruluş', desc: 'Pergule, küçük bir ekiple tente ve branda sektörüne adım attı.' },
@@ -143,7 +144,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <div className="hidden md:flex w-10 h-10 items-center justify-center rounded-full bg-amber-500 text-white shrink-0 z-10" aria-hidden="true">
-                    <i className="ri-check-line text-sm"></i>
+                    <Icon name="check-line" className="text-sm" />
                   </div>
                   <div className="flex-1"></div>
                 </div>
@@ -206,7 +207,7 @@ export default function AboutPage() {
               href={PHONE_HREF}
               className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-amber-500 text-white font-semibold text-sm hover:bg-amber-600 transition-colors cursor-pointer whitespace-nowrap"
             >
-              <i className="ri-phone-line" aria-hidden="true"></i>
+              <Icon name="phone-line" aria-hidden="true" />
               Hemen Ara
             </a>
             <a
@@ -215,7 +216,7 @@ export default function AboutPage() {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-white/30 text-white font-semibold text-sm hover:border-white transition-colors cursor-pointer whitespace-nowrap"
             >
-              <i className="ri-whatsapp-line" aria-hidden="true"></i>
+              <Icon name="whatsapp-line" aria-hidden="true" />
               WhatsApp&apos;tan Yaz
             </a>
           </div>

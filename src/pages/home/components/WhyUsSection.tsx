@@ -1,12 +1,13 @@
 import { PHONE_HREF, WHATSAPP_HREF } from '@/lib/constants';
+import Icon from '@/components/Icon';
 
 const features = [
-  { icon: 'ri-shield-check-line', title: 'Dayanıklı Malzeme Kalitesi', desc: 'Sertifikalı, UV dayanımlı ve uzun ömürlü malzemeler. Her ürün yıllarca sorunsuz hizmet verecek şekilde üretilir.' },
-  { icon: 'ri-team-line', title: 'Uzman Montaj Ekibi', desc: 'Deneyimli ekibimiz kurulumu titizlikle gerçekleştirir. İşin her aşamasında yanınızdayız.' },
-  { icon: 'ri-price-tag-3-line', title: 'Uygun Fiyat Politikası', desc: 'Kaliteden ödün vermeden rekabetçi fiyatlar. Bütçenize uygun çözümler için ücretsiz keşif talep edin.' },
-  { icon: 'ri-time-line', title: 'Hızlı Kurulum', desc: 'Anlaşma sonrası kısa sürede kurulum tamamlanır. Zamanınıza saygı duyuyor, söz verdiğimiz tarihe uyuyoruz.' },
-  { icon: 'ri-customer-service-2-line', title: 'Satış Sonrası Destek', desc: 'Kurulum bittikten sonra da yanınızdayız. Bakım, onarım ve teknik destek için her zaman ulaşabilirsiniz.' },
-  { icon: 'ri-search-eye-line', title: 'Ücretsiz Keşif Hizmeti', desc: 'Projenizi yerinde inceliyor, ihtiyacınıza en uygun sistemi öneriyor ve ücretsiz fiyat teklifi sunuyoruz.' },
+  { icon: 'shield-check-line', title: 'Dayanıklı Malzeme Kalitesi', desc: 'Sertifikalı, UV dayanımlı ve uzun ömürlü malzemeler. Her ürün yıllarca sorunsuz hizmet verecek şekilde üretilir.' },
+  { icon: 'team-line', title: 'Uzman Montaj Ekibi', desc: 'Deneyimli ekibimiz kurulumu titizlikle gerçekleştirir. İşin her aşamasında yanınızdayız.' },
+  { icon: 'price-tag-3-line', title: 'Uygun Fiyat Politikası', desc: 'Kaliteden ödün vermeden rekabetçi fiyatlar. Bütçenize uygun çözümler için ücretsiz keşif talep edin.' },
+  { icon: 'time-line', title: 'Hızlı Kurulum', desc: 'Anlaşma sonrası kısa sürede kurulum tamamlanır. Zamanınıza saygı duyuyor, söz verdiğimiz tarihe uyuyoruz.' },
+  { icon: 'customer-service-2-line', title: 'Satış Sonrası Destek', desc: 'Kurulum bittikten sonra da yanınızdayız. Bakım, onarım ve teknik destek için her zaman ulaşabilirsiniz.' },
+  { icon: 'search-eye-line', title: 'Ücretsiz Keşif Hizmeti', desc: 'Projenizi yerinde inceliyor, ihtiyacınıza en uygun sistemi öneriyor ve ücretsiz fiyat teklifi sunuyoruz.' },
 ];
 
 export default function WhyUsSection() {
@@ -59,7 +60,7 @@ export default function WhyUsSection() {
           {features.map((f) => (
             <div key={f.title} className="group p-6 rounded-2xl border border-white/8 bg-white/4 hover:bg-white/8 hover:border-[#D4A853]/30 transition-all duration-300">
               <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-[#D4A853]/15 mb-5" aria-hidden="true">
-                <i className={`${f.icon} text-[#D4A853] text-xl`}></i>
+                <Icon name={f.icon} className="text-[#D4A853] text-xl" aria-hidden="true" />
               </div>
               <h3 className="text-white font-semibold text-sm mb-2">{f.title}</h3>
               <p className="text-white/40 text-xs leading-relaxed">{f.desc}</p>
@@ -73,7 +74,7 @@ export default function WhyUsSection() {
             href={PHONE_HREF}
             className="flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#D4A853] text-[#0f0f0f] font-bold text-sm hover:bg-[#c49840] transition-colors cursor-pointer whitespace-nowrap"
           >
-            <i className="ri-phone-fill" aria-hidden="true"></i>
+            <Icon name="phone-fill" aria-hidden="true" />
             Ücretsiz Keşif İçin Ara
           </a>
           <a
@@ -82,7 +83,7 @@ export default function WhyUsSection() {
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 px-7 py-4 rounded-full border border-white/20 text-white font-semibold text-sm hover:border-white/40 hover:bg-white/5 transition-colors cursor-pointer whitespace-nowrap"
           >
-            <i className="ri-whatsapp-line" aria-hidden="true"></i>
+            <Icon name="whatsapp-line" aria-hidden="true" />
             Hızlı Teklif İçin WhatsApp
           </a>
         </div>

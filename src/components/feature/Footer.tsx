@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { PHONE_DISPLAY, PHONE_HREF, WHATSAPP_HREF, EMAIL, ADDRESS, BRAND_NAME } from '@/lib/constants';
+import Icon from '@/components/Icon';
 
 const serviceLinks = [
   { label: 'Kasetli Tente', href: '/hizmetler/kasetli-tente' },
@@ -47,25 +48,25 @@ export default function Footer() {
             <address className="not-italic flex flex-col gap-3">
               <a href={PHONE_HREF} className="flex items-center gap-3 group cursor-pointer" aria-label={`Telefon: ${PHONE_DISPLAY}`}>
                 <div className="w-8 h-8 flex items-center justify-center rounded-lg bg-white/6 group-hover:bg-[#D4A853]/20 transition-colors" aria-hidden="true">
-                  <i className="ri-phone-line text-[#D4A853] text-sm"></i>
+                  <Icon name="phone-line" className="text-[#D4A853] text-sm" />
                 </div>
                 <span className="text-white/50 text-xs group-hover:text-white/80 transition-colors">{PHONE_DISPLAY}</span>
               </a>
               <a href={WHATSAPP_HREF} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group cursor-pointer" aria-label="WhatsApp ile iletişime geçin">
                 <div className="w-8 h-8 flex items-center justify-center rounded-lg bg-white/6 group-hover:bg-[#D4A853]/20 transition-colors" aria-hidden="true">
-                  <i className="ri-whatsapp-line text-[#D4A853] text-sm"></i>
+                  <Icon name="whatsapp-line" className="text-[#D4A853] text-sm" />
                 </div>
                 <span className="text-white/50 text-xs group-hover:text-white/80 transition-colors">WhatsApp ile Yaz</span>
               </a>
               <a href={`mailto:${EMAIL}`} className="flex items-center gap-3 group cursor-pointer" aria-label={`E-posta: ${EMAIL}`}>
                 <div className="w-8 h-8 flex items-center justify-center rounded-lg bg-white/6 group-hover:bg-[#D4A853]/20 transition-colors" aria-hidden="true">
-                  <i className="ri-mail-line text-[#D4A853] text-sm"></i>
+                  <Icon name="mail-line" className="text-[#D4A853] text-sm" />
                 </div>
                 <span className="text-white/50 text-xs group-hover:text-white/80 transition-colors">{EMAIL}</span>
               </a>
               <div className="flex items-start gap-3">
                 <div className="w-8 h-8 flex items-center justify-center rounded-lg bg-white/6 shrink-0" aria-hidden="true">
-                  <i className="ri-map-pin-line text-[#D4A853] text-sm"></i>
+                  <Icon name="map-pin-line" className="text-[#D4A853] text-sm" />
                 </div>
                 <span className="text-white/35 text-xs leading-relaxed">{ADDRESS}</span>
               </div>

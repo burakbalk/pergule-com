@@ -1,4 +1,5 @@
 import { PHONE_HREF, WHATSAPP_HREF } from '@/lib/constants';
+import Icon from '@/components/Icon';
 
 export default function ContactCTASection() {
   return (
@@ -29,7 +30,7 @@ export default function ContactCTASection() {
               className="flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#0f0f0f] text-white font-bold text-sm hover:bg-[#1a1a1a] transition-colors cursor-pointer whitespace-nowrap"
             >
               <div className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10" aria-hidden="true">
-                <i className="ri-phone-fill text-sm"></i>
+                <Icon name="phone-fill" className="text-sm" />
               </div>
               Ücretsiz Keşif İçin Ara
             </a>
@@ -40,7 +41,7 @@ export default function ContactCTASection() {
               className="flex items-center justify-center gap-3 px-8 py-4 rounded-full border-2 border-[#0f0f0f]/30 text-[#0f0f0f] font-bold text-sm hover:border-[#0f0f0f] hover:bg-[#0f0f0f]/8 transition-colors cursor-pointer whitespace-nowrap"
             >
               <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#0f0f0f]/10" aria-hidden="true">
-                <i className="ri-whatsapp-line text-sm"></i>
+                <Icon name="whatsapp-line" className="text-sm" />
               </div>
               Hızlı Teklif İçin WhatsApp
             </a>
@@ -50,13 +51,13 @@ export default function ContactCTASection() {
         {/* Bottom divider with trust signals */}
         <div className="mt-14 pt-8 border-t border-[#0f0f0f]/15 flex flex-wrap gap-6 md:gap-10">
           {[
-            { icon: 'ri-shield-check-line', text: 'Garantili Ürünler' },
-            { icon: 'ri-time-line', text: 'Hızlı Kurulum' },
-            { icon: 'ri-search-eye-line', text: 'Ücretsiz Keşif' },
-            { icon: 'ri-customer-service-2-line', text: 'Satış Sonrası Destek' },
+            { icon: 'shield-check-line', text: 'Garantili Ürünler' },
+            { icon: 'time-line', text: 'Hızlı Kurulum' },
+            { icon: 'search-eye-line', text: 'Ücretsiz Keşif' },
+            { icon: 'customer-service-2-line', text: 'Satış Sonrası Destek' },
           ].map((item) => (
             <div key={item.text} className="flex items-center gap-2">
-              <i className={`${item.icon} text-[#0f0f0f]/50 text-base`} aria-hidden="true"></i>
+              <Icon name={item.icon} className="text-[#0f0f0f]/50 text-base" aria-hidden="true" />
               <span className="text-[#0f0f0f]/60 text-xs font-medium">{item.text}</span>
             </div>
           ))}

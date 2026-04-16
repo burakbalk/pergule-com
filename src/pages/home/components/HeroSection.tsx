@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { PHONE_HREF, WHATSAPP_HREF } from '@/lib/constants';
+import Icon from '@/components/Icon';
 
 export default function HeroSection() {
   const [visible, setVisible] = useState(false);
@@ -63,7 +64,7 @@ export default function HeroSection() {
             href={PHONE_HREF}
             className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#D4A853] text-[#0f0f0f] font-bold text-sm hover:bg-[#c49840] active:scale-95 transition-all cursor-pointer whitespace-nowrap"
           >
-            <i className="ri-phone-fill" aria-hidden="true" />
+            <Icon name="phone-fill" aria-hidden="true" />
             Hemen Ara
           </a>
           <a
@@ -72,7 +73,7 @@ export default function HeroSection() {
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-white/25 text-white font-semibold text-sm hover:border-white/50 hover:bg-white/5 active:scale-95 transition-all cursor-pointer whitespace-nowrap"
           >
-            <i className="ri-whatsapp-line" aria-hidden="true" />
+            <Icon name="whatsapp-line" aria-hidden="true" />
             WhatsApp&apos;tan Yaz
           </a>
         </div>
@@ -103,7 +104,7 @@ export default function HeroSection() {
 
       {/* Scroll göstergesi */}
       <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2 text-white/25 text-[10px] uppercase tracking-widest z-10" aria-hidden="true">
-        <i className="ri-arrow-down-line animate-bounce text-sm" />
+        <Icon name="arrow-down-line" className="animate-bounce text-sm" />
       </div>
     </section>
   );

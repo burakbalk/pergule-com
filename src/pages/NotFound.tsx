@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '@/components/feature/Navbar';
 import Footer from '@/components/feature/Footer';
 import MobileCTA from '@/components/feature/MobileCTA';
+import Icon from '@/components/Icon';
 
 export default function NotFound() {
   return (
@@ -42,14 +43,14 @@ export default function NotFound() {
               to="/"
               className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-[#D4A853] text-[#0f0f0f] font-bold text-sm hover:bg-[#c49840] transition-colors cursor-pointer whitespace-nowrap"
             >
-              <i className="ri-home-line" aria-hidden="true"></i>
+              <Icon name="home-line" aria-hidden="true" />
               Ana Sayfaya Dön
             </Link>
             <Link
               to="/hizmetler"
               className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-full border border-white/20 text-white font-semibold text-sm hover:border-white/40 transition-colors cursor-pointer whitespace-nowrap"
             >
-              <i className="ri-list-check-line" aria-hidden="true"></i>
+              <Icon name="list-check-line" aria-hidden="true" />
               Hizmetleri İncele
             </Link>
           </div>

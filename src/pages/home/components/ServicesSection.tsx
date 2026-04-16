@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { servicesList } from '@/mocks/services';
+import Icon from '@/components/Icon';
 
 export default function ServicesSection() {
   const [hovered, setHovered] = useState<string | null>(null);
@@ -27,7 +28,7 @@ export default function ServicesSection() {
             className="inline-flex items-center gap-2 text-white/50 text-sm hover:text-[#D4A853] transition-colors cursor-pointer whitespace-nowrap group self-start sm:self-auto"
           >
             Tümünü Gör
-            <i className="ri-arrow-right-line group-hover:translate-x-1 transition-transform"></i>
+            <Icon name="arrow-right-line" className="group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
 
@@ -72,7 +73,7 @@ export default function ServicesSection() {
                   ? 'border-[#D4A853] bg-[#D4A853] text-[#0f0f0f]'
                   : 'border-white/15 text-white/30'
               }`}>
-                <i className="ri-arrow-right-up-line text-sm"></i>
+                <Icon name="arrow-right-up-line" className="text-sm" />
               </div>
             </Link>
           ))}
