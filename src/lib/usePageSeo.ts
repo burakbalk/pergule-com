@@ -4,9 +4,11 @@ interface PageSeoOptions {
   title: string;
   description: string;
   canonical?: string;
+  /** true ise title olduğu gibi kullanılır, BASE_TITLE eklenmez */
+  rawTitle?: boolean;
 }
 
-const BASE_TITLE = 'Pergule | Tente ve Pergola Sistemleri';
+const BASE_TITLE = 'Pergule | Tente, Pergola ve Dış Mekan Sistemleri';
 
 /**
  * Her sayfada document.title ve meta description'ı günceller.
@@ -14,10 +16,11 @@ const BASE_TITLE = 'Pergule | Tente ve Pergola Sistemleri';
  * güncelleme sosyal paylaşım önizlemelerinde ve tarayıcı
  * sekmelerinde doğru görünümü sağlar.
  */
-export function usePageSeo({ title, description, canonical }: PageSeoOptions) {
+export function usePageSeo({ title, description, canonical, rawTitle }: PageSeoOptions) {
   useEffect(() => {
     // Title
-    document.title = `${title} | ${BASE_TITLE}`;
+    const fullTitle = rawTitle ? title : `${title} | ${BASE_TITLE}`;
+    document.title = fullTitle;
 
     // Meta description
     let metaDesc = document.querySelector<HTMLMetaElement>('meta[name="description"]');
@@ -30,7 +33,7 @@ export function usePageSeo({ title, description, canonical }: PageSeoOptions) {
 
     // OG title
     let ogTitle = document.querySelector<HTMLMetaElement>('meta[property="og:title"]');
-    if (ogTitle) ogTitle.content = `${title} | ${BASE_TITLE}`;
+    if (ogTitle) ogTitle.content = fullTitle;
 
     // OG description
     let ogDesc = document.querySelector<HTMLMetaElement>('meta[property="og:description"]');

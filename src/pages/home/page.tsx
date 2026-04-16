@@ -13,9 +13,10 @@ import { SITE_URL } from '@/lib/constants';
 
 export default function Home() {
   usePageSeo({
-    title: 'Tente ve Pergola Sistemleri | Pergule',
-    description: 'Profesyonel tente ve pergola çözümleri. Kasetli tente, bioklimatik pergola, zip perde ve şeffaf branda sistemleri. Türkiye geneli ücretsiz keşif için hemen arayın.',
+    title: 'Pergule | Tente, Pergola ve Dış Mekan Sistemleri',
+    description: 'Kasetli tente, bioklimatik pergola, zip perde ve şeffaf branda sistemleri. Türkiye geneli profesyonel dış mekan çözümleri. Ücretsiz keşif için hemen arayın.',
     canonical: SITE_URL,
+    rawTitle: true,
   });
   return (
     <div className="min-h-screen" style={{ fontFamily: "'Inter', sans-serif" }}>
