@@ -39,7 +39,7 @@ export default function ServicesPage() {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden" aria-label="Hizmetler başlık">
         <div className="absolute inset-0" aria-hidden="true">
           <img
-            src="/images/hero/about-bg.jpg"
+            src="/images/hero/about-bg.webp"
             alt=""
             className="w-full h-full object-cover object-center"
             loading="eager"

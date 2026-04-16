@@ -20,7 +20,7 @@ export default function HeroSection() {
       {/* Arka plan görseli */}
       <div className="absolute inset-0" aria-hidden="true">
         <img
-          src="/images/hero/main.jpg"
+          src="/images/hero/main.webp"
           alt=""
           className="w-full h-full object-cover object-center"
           loading="eager"

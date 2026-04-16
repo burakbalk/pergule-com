@@ -45,7 +45,7 @@ export default function AboutPage() {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden" aria-label="Hakkımızda başlık">
         <div className="absolute inset-0" aria-hidden="true">
           <img
-            src="/images/hero/about-bg.jpg"
+            src="/images/hero/about-bg.webp"
             alt=""
             className="w-full h-full object-cover object-top"
             loading="eager"
@@ -95,7 +95,7 @@ export default function AboutPage() {
             <div className="relative mt-8 lg:mt-0">
               <div className="w-full h-72 md:h-96 rounded-2xl overflow-hidden">
                 <img
-                  src="/images/hero/about-story.jpg"
+                  src="/images/hero/about-story.webp"
                   alt="Pergule showroom ve ürün teşhir alanı"
                   className="w-full h-full object-cover object-top"
                   loading="lazy"

@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block mb-5 cursor-pointer" aria-label={`${BRAND_NAME} Ana Sayfa`}>
               <img
-                src="/logo.png"
+                src="/logo.webp"
                 alt={`${BRAND_NAME} Logosu`}
                 className="h-9 w-auto object-contain"
                 width="180"

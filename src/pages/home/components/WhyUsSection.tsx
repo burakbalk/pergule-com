@@ -15,7 +15,7 @@ export default function WhyUsSection() {
       {/* Background image with overlay */}
       <div className="absolute inset-0" aria-hidden="true">
         <img
-          src="/images/hero/whyus-bg.jpg"
+          src="/images/hero/whyus-bg.webp"
           alt=""
           className="w-full h-full object-cover object-center"
           loading="lazy"
